@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fde2e4, #f9f5f6);
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 30px;
+  color: #ad1457;
+}
+
+/* 🌸 CARD (SOFT PINK) */
+.card {
+  background: linear-gradient(135deg, #fff0f3, #fce4ec);
+  width: 60%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  /* SMOOTH ANIMATION */
+  animation: fadeIn 0.5s ease;
+}
+
+/* FIX TEXT COLORS */
+.card h2,
+.card h3,
+.card h4,
+.card p {
+  color: #ad1457;
+}
+
+/* TOPICS */
+.topic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topic-btn {
+  background: white;
+  border: 2px solid #ec407a;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 120px;
+  transition: 0.3s;
+  color: #ad1457;
+
+  /* SOFT SHADOW */
+  box-shadow: 0 3px 8px rgba(236, 64, 122, 0.15);
+}
+
+.topic-btn:hover {
+  background: linear-gradient(135deg, #ec407a, #f06292);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* QUIZ OPTIONS */
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.option-btn {
+  background: white;
+  border: 2px solid #ec407a;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  color: #ad1457;
+
+  /* SOFT SHADOW */
+  box-shadow: 0 3px 8px rgba(236, 64, 122, 0.15);
+}
+
+/* HOVER */
+.option-btn:hover {
+  background: linear-gradient(135deg, #ec407a, #f06292);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* SELECTED */
+.option-btn.selected {
+  background: #ec407a !important;
+  color: white !important;
+  border: 3px solid #ad1457;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* NEXT BUTTON */
+.next-btn {
+  background: #ec407a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #c2185b;
+  transform: scale(1.05);
+}
+
+/* TIMER */
+.timer {
+  margin: 10px;
+  font-weight: bold;
+  color: #ad1457;
+}
+
+/* 🌟 FADE ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
