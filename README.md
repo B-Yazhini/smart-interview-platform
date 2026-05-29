@@ -1,16 +1,73 @@
-# React + Vite
+🎯 Smart Interview Preparation Platform
+A fully responsive quiz-based web application built with ReactJS to help users prepare for technical interviews. Features timed quizzes, instant score feedback, and detailed answer review.
+🔗 Live Demo: smart-interview-platform-two.vercel.app 
+📂 GitHub Repo: github.com/B-Yazhini/smart-interview-platform
+---
+✨ Features
+📚 Multiple question categories (JavaScript, React, etc.)
+⏱️ Countdown timer for each quiz session
+📊 Real-time score calculation and instant feedback
+🔍 Detailed wrong-answer review after quiz completion
+💾 Quiz history saved using localStorage — persists across sessions
+📱 Fully responsive — works on mobile, tablet, and desktop
+🧩 Component-based architecture for clean, modular code
+---
+🛠️ Tech Stack
+Technology	Usage
+ReactJS	Frontend framework
+JavaScript (ES6+)	Application logic
+React Hooks (useState, useEffect)	State management
+localStorage	Persist quiz history
+HTML5	Markup
+CSS3	Styling and responsive layout
+---
+📁 Project Structure
+```
+smart-interview-platform/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Quiz.js
+│   │   ├── Question.js
+│   │   ├── Timer.js
+│   │   ├── ScoreCard.js
+│   │   └── ReviewAnswers.js
+│   ├── data/
+│   │   └── questions.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+└── package.json
+```
+---
+🚀 Getting Started
+Prerequisites
+Node.js (v14 or above)
+npm
+Installation
+```bash
+# Clone the repository
+git clone https://github.com/B-Yazhini/smart-interview-platform.git
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Navigate to the project folder
+cd smart-interview-platform
 
-Currently, two official plugins are available:
+# Install dependencies
+npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Start the development server
+npm start
+```
+The app will run at `http://localhost:3000`
+---
+🌐 Deployment
+This app is deployed on Vercel.  
+🔗 Live Link: smart-interview-platform-two.vercel.app 
+---
+👩‍💻 Author
+Yazhini B  
+📧 yazhinibalan11@gmail.com  
+---
+📄 License
+This project is open source and available under the MIT License.
